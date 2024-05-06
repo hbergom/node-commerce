@@ -83,7 +83,6 @@ main{
 	display: flex;
 	padding: 0;
 	width: 400%;
-	
 	animation: slide 20s infinite alternate ease-in-out;
 }
 
@@ -208,14 +207,32 @@ footer{
 
 
 /* MEDIA QUERIES */
-@media (max-width: 450px) {
+@media only screen and (max-width: 768px) {
+    
     .products{
+   
         padding-top: 5%;
         padding-bottom: 5%;
         display: grid;
-        grid-gap: 5px;
+        grid-gap: 10px;
         grid-template-columns: 1fr;
         width: 100vw;
         justify-items: center;
     }
-}
+    .slider-frame {
+        width: 100vw;
+        height: auto;
+        margin:10px auto 0;
+        overflow: hidden;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 0;
+        justify-items: flex-end;
+        justify-content: space-between;
+        width: 70%;
+        text-decoration: none; 
+    }
+  }
